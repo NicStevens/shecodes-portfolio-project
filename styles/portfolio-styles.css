@@ -1,30 +1,101 @@
 :root {
-  --primary-color: rgb(232, 242, 253);
-  --secondary-color: rgb(118, 237, 193);
+  --primary-color: rgb(15, 12, 30);
+  --secondary-color: rgb(156, 234, 181);
+  --header-font: Georgia, "Times New Roman", Times, serif;
+  --secondary-font: "Sarabun", sans-serif;
 }
+
+.navbar-brand {
+  font-family: "Satisfy", cursive;
+}
+
+.nav-link {
+  font-family: var(--secondary-font);
+}
+
+main {
+  background-color: var(--primary-color);
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  color: white;
+}
+
 .hero {
   text-align: left;
-  background: var(--primary-color);
-  padding: 100px;
+  background: var(--secondary-color);
+  padding: 100px 130px;
 }
 
 .hero h1 {
   font-size: 96px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--header-font);
   font-weight: 800;
 }
+
 .hero h2 {
   font-size: 25px;
-  font-family: "Sarabun", sans-serif;
+  font-family: var(--secondary-font);
 }
 .hero .btn-hero-contact {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 10px 15px;
   font-size: 18px;
   margin: 10px 0;
   border-radius: 5px;
   box-shadow: 2.3px 4.6px 4.6px rgba(0, 0, 0, 0.43);
+  color: white;
 }
+
+.hero .btn-hero-contact:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.outside-container-p {
+  font-size: 25px;
+}
+
+.container h2 {
+  font-family: var(--header-font);
+  font-size: 40px;
+  color: white;
+}
+.container .btn-in-container {
+  background: var(--secondary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2.3px 4.6px 4.6px rgba(255, 255, 255, 0.43);
+  border: 2px solid white;
+}
+
+.container .btn-in-container:hover {
+  background: white;
+}
+
+.row {
+  padding: 30px;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 2.3px 4.6px 4.6px rgba(0, 0, 0, 0.43);
+}
+.image-1 {
+  border: 20px solid rgb(214, 172, 247);
+}
+.image-2 {
+  border: 20px solid var(--secondary-color);
+}
+.image-3 {
+  border: 20px solid rgb(172, 205, 247);
+}
+
 @media (max-width: 575px) {
   .hero {
     text-align: center;
@@ -32,5 +103,10 @@
   }
   .hero h1 {
     font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    text-align: center;
   }
 }
