@@ -59,12 +59,12 @@ p {
   font-size: 25px;
 }
 
-.container h2 {
+.project-container h2 {
   font-family: var(--header-font);
   font-size: 40px;
   color: white;
 }
-.container .btn-in-container {
+.project-container .btn-in-container {
   background: var(--secondary-color);
   padding: 10px 15px;
   font-size: 18px;
@@ -74,7 +74,7 @@ p {
   border: 2px solid white;
 }
 
-.container .btn-in-container:hover {
+.project-container .btn-in-container:hover {
   background: white;
 }
 
@@ -96,24 +96,24 @@ img {
   border: 20px solid rgb(172, 205, 247);
 }
 
-.about-me {
+.information-container {
   text-align: left;
   background: var(--secondary-color);
   padding: 100px 130px 60px;
 }
 
-.about-me h1 {
+.information-container h1 {
   font-size: 96px;
   font-family: var(--header-font);
   font-weight: 800;
 }
 
-.about-me p {
+.information-container p {
   font-size: 18px;
   color: var(--primary-color);
   font-family: var(--secondary-font);
 }
-.about-me .btn-view-projects {
+.information-container .btn-view-projects {
   background: var(--primary-color);
   padding: 10px 15px;
   font-size: 18px;
@@ -123,10 +123,14 @@ img {
   color: white;
 }
 
-.about-me .btn-view-projects:hover {
+.information-container .btn-view-projects:hover {
   background: white;
   color: black;
   border: 2px solid black;
+}
+
+.information-container img {
+  border: 2px solid var(--primary-color);
 }
 
 @media (max-width: 575px) {
@@ -139,20 +143,20 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .container {
+  .information-container {
     text-align: center;
   }
-  .container .responsive-margin {
+  .information-container .responsive-margin {
     margin-top: 75px;
   }
 }
 
 @media (max-width: 800px) {
-  .about-me {
+  .information-container {
     text-align: center;
     padding: 100px 5px;
   }
-  .about-me h1 {
+  .information-container h1 {
     font-size: 45px;
   }
 }
