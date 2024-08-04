@@ -26,7 +26,7 @@ p {
 .hero {
   text-align: left;
   background: var(--secondary-color);
-  padding: 100px 130px;
+  padding: 100px 130px 60px;
 }
 
 .hero h1 {
@@ -39,7 +39,7 @@ p {
   font-size: 25px;
   font-family: var(--secondary-font);
 }
-.hero .btn-hero-contact {
+.hero .btn-contact {
   background: var(--primary-color);
   padding: 10px 15px;
   font-size: 18px;
@@ -49,7 +49,7 @@ p {
   color: white;
 }
 
-.hero .btn-hero-contact:hover {
+.hero .btn-contact:hover {
   background: white;
   color: black;
   border: 2px solid black;
@@ -96,6 +96,39 @@ img {
   border: 20px solid rgb(172, 205, 247);
 }
 
+.about-me {
+  text-align: left;
+  background: var(--secondary-color);
+  padding: 100px 130px 60px;
+}
+
+.about-me h1 {
+  font-size: 96px;
+  font-family: var(--header-font);
+  font-weight: 800;
+}
+
+.about-me p {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+}
+.about-me .btn-view-projects {
+  background: var(--primary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2.3px 4.6px 4.6px rgba(0, 0, 0, 0.43);
+  color: white;
+}
+
+.about-me .btn-view-projects:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
 @media (max-width: 575px) {
   .hero {
     text-align: center;
@@ -108,5 +141,15 @@ img {
 @media (max-width: 767px) {
   .container {
     text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-me {
+    text-align: center;
+    padding: 100px 5px;
+  }
+  .about-me h1 {
+    font-size: 45px;
   }
 }
