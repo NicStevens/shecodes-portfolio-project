@@ -142,6 +142,9 @@ img {
   .container {
     text-align: center;
   }
+  .container .responsive-margin {
+    margin-top: 75px;
+  }
 }
 
 @media (max-width: 800px) {
