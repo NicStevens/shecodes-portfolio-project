@@ -132,6 +132,13 @@ img {
 .information-container img {
   border: 2px solid var(--primary-color);
 }
+.information-container a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.information-container a:hover {
+  color: white;
+}
 
 @media (max-width: 575px) {
   .hero {
