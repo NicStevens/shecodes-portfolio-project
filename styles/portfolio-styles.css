@@ -140,6 +140,108 @@ img {
   color: white;
 }
 
+footer {
+  border-top: solid 1px rgb(255, 255, 255, 0.5);
+}
+footer h4 {
+  font-size: 36px;
+  font-family: var(--header-font);
+  margin-bottom: 0;
+}
+footer p {
+  margin-bottom: 0;
+  font-family: var(--secondary-font);
+}
+footer .contact-box {
+  color: white;
+}
+
+.contact-box .btn-contact {
+  background: var(--secondary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2.3px 4.6px 4.6px rgba(255, 255, 255, 0.43);
+  border: 2px solid white;
+}
+
+.contact-box .btn-contact:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.email-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.email-link a:hover {
+  color: var(--secondary-color);
+}
+
+.social-links a {
+  color: black;
+  margin: 0 20px;
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  background: white;
+}
+
+footer .contact-box-secondary {
+  color: black;
+}
+
+footer .btn-contact-dark {
+  background: var(--primary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2.3px 4.6px 4.6px rgba(0, 0, 0, 0.43);
+  color: white;
+}
+
+footer .btn-contact-dark:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.email-link-secondary a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.email-link-secondary a:hover {
+  color: white;
+}
+
+.social-links-secondary a {
+  color: white;
+  margin: 0 20px;
+  background-color: var(--primary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.social-links-secondary a:hover {
+  background: white;
+  color: black;
+}
+
+.contact-page img {
+  max-width: 60%;
+}
 @media (max-width: 575px) {
   .hero {
     text-align: center;
@@ -150,10 +252,10 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .information-container {
+  .project-container {
     text-align: center;
   }
-  .information-container .responsive-margin {
+  .project-container .responsive-margin {
     margin-top: 75px;
   }
 }
@@ -165,5 +267,8 @@ img {
   }
   .information-container h1 {
     font-size: 45px;
+  }
+  .contact-page img {
+    max-width: 75%;
   }
 }
