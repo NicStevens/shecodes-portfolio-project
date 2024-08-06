@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nicky Stevens is a front-end developer and information management professional based in Florida, USA. She has experience working with HTML, CSS, JavaScript, Python, APIs, and AI technology."
+    />
     <title>
       Nicky Stevens - Front-end Developer and Information Management
       Professional based in Florida, USA
@@ -32,13 +36,13 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="body">
     <nav
       class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary fixed-top"
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Nicky Stevens</a>
+        <a class="navbar-brand" href="/" title="Homepage">Nicky Stevens</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,14 +56,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/about.html">About</a>
-            <a class="nav-link" href="/work.html">Work</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/"
+              title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link" href="/about.html" title="About Nicky Stevens"
+              >About</a
+            >
+            <a
+              class="nav-link"
+              href="/work.html"
+              aria-multiline="Nicky Stevens's Work"
+              >Work</a
+            >
+            <a
+              class="nav-link"
+              href="/contact.html"
+              title="Contact Nicky Stevens"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
     </nav>
+
     <div class="hero">
       <h2>Welcome! I am</h2>
       <h1>Nicky Stevens</h1>
@@ -68,109 +91,134 @@
         USA
       </h2>
       <div>
-        <a href="/contact.html" class="btn btn-contact">Contact me</a>
+        <a href="/contact.html" class="btn btn-contact" title="Contact Nicky"
+          >Contact me</a
+        >
       </div>
     </div>
-    <main>
-      <p class="text-center pt-4 mb-4 outside-container-p">Featured Projects</p>
-      <div class="project-container">
-        <div class="row">
-          <div class="col-6 d-none d-md-block">
-            <img
-              src="/images/fairy-tale-generator-5.png"
-              class="img-fluid image-1"
-            />
-          </div>
-          <div class="col-md-6">
-            <h2 class="mb-3">Fairy Tale Generator</h2>
-            <p>
-              This is a Fairy Tale Generator. This is a Fairy Tale Generator.
-              This is a Fairy Tale Generator. This is a Fairy Tale Generator.
-              This is a Fairy Tale Generator. This is a Fairy Tale Generator.
-              This is a Fairy Tale Generator. This is a Fairy Tale Generator.
-            </p>
-            <a
-              href="https://www.shecodes.io/cohorts/2002/projects/2311809?_gl=1*b2yh30*_gcl_au*MTcxODkxNjI2NC4xNzIyMTA5MzkyLjE2NTQ3NjAyNDkuMTcyMjcyNjQwMS4xNzIyNzI2NDAw"
-              target="_blank"
-              class="btn btn-in-container"
-              >View project</a
-            >
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="mb-3">World Clock</h2>
-            <p>
-              This is a world clock. This is a world clock. This is a world
-              clock. This is a world clock. This is a world clock. This is a
-              world clock. This is a world clock. This is a world clock. This is
-              a world clock.
-            </p>
-            <a
-              href="https://www.shecodes.io/cohorts/1938/projects/2267965?_gl=1*5x2tre*_gcl_au*MTcxODkxNjI2NC4xNzIyMTA5MzkyLjE2NTQ3NjAyNDkuMTcyMjcyNjQwMS4xNzIyNzI2NDAw"
-              target="_blank"
-              class="btn btn-in-container"
-              >View project</a
-            >
-          </div>
-          <div class="col-6 d-none d-md-block">
-            <img
-              src="/images/world-clock.png"
-              class="img-fluid image-2"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 d-none d-md-block">
-            <img src="/images/zombies.png" class="img-fluid image-3" />
-          </div>
-          <div class="col-md-6">
-            <h2 class="mb-3">Zombie Preparation Webpage</h2>
-            <p>
-              Prepare for zombies. Prepare for zombies. Prepare for zombies.
-              Prepare for zombies. Prepare for zombies. Prepare for zombies.
-              Prepare for zombies. Prepare for zombies. Prepare for zombies.
-              Prepare for zombies. Prepare for zombies. Prepare for zombies.
-            </p>
-            <a
-              href="https://www.shecodes.io/cohorts/263/projects/261481?_gl=1*pry1up*_gcl_au*MTcxODkxNjI2NC4xNzIyMTA5MzkyLjE2NTQ3NjAyNDkuMTcyMjcyNjQwMS4xNzIyNzI2NDAw"
-              target="_blank"
-              class="btn btn-in-container"
-              >View project</a
-            >
-          </div>
-        </div>
 
-        <footer>
-          <div class="footer-box pt-5">
-            <div class="contact-box text-center">
-              <div>
-                <h4>Work Inquiry</h4>
-                <p>Let's work together!</p>
-              </div>
-              <div>
-                <a href="/contact.html" class="btn btn-contact">Contact me</a>
-              </div>
+    <p class="text-center pt-4 mb-4 outside-container-p">Featured Projects</p>
+    <div class="project-container">
+      <div class="row">
+        <div class="col-6 d-none d-md-block">
+          <img
+            src="/images/fairy-tale-generator-5.png"
+            class="img-fluid image-1"
+            alt="Fairy Tale Generator preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">Fairy Tale Generator</h2>
+          <p>
+            Developed using HTML, CSS, and JavaScript with the use of an API and
+            Artificial Intelligence, this Fair Tale Generator produces a
+            delightful short story. Simply type in a topic and enjoy a magical
+            tale!
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2002/projects/2311809?_gl=1*b2yh30*_gcl_au*MTcxODkxNjI2NC4xNzIyMTA5MzkyLjE2NTQ3NjAyNDkuMTcyMjcyNjQwMS4xNzIyNzI2NDAw"
+            target="_blank"
+            class="btn btn-in-container"
+            >View project</a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-3">World Clock</h2>
+          <p>
+            This world clock can tell you the time in different cities around
+            the world down to the second! Created using HTLM, CSS, and
+            JavaScript, this clock allows you to select from cities (or the
+            South Pole!) or choose your current location.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/1938/projects/2267965?_gl=1*5x2tre*_gcl_au*MTcxODkxNjI2NC4xNzIyMTA5MzkyLjE2NTQ3NjAyNDkuMTcyMjcyNjQwMS4xNzIyNzI2NDAw"
+            target="_blank"
+            class="btn btn-in-container"
+            >View project</a
+          >
+        </div>
+        <div class="col-6 d-none d-md-block">
+          <img
+            src="/images/world-clock.png"
+            class="img-fluid image-2"
+            alt="World Clock app preview"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 d-none d-md-block">
+          <img
+            src="/images/zombies.png"
+            class="img-fluid image-3"
+            alt="Zombie Preparation webpage preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">Zombie Preparation Webpage</h2>
+          <p>
+            Utilizing skills developed during my first SheCodes workshop, I
+            created this fun, informative, and interactive zombie preparation
+            landing page using HTML, CSS, JavaScript, and VS Code.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/263/projects/261481?_gl=1*pry1up*_gcl_au*MTcxODkxNjI2NC4xNzIyMTA5MzkyLjE2NTQ3NjAyNDkuMTcyMjcyNjQwMS4xNzIyNzI2NDAw"
+            target="_blank"
+            class="btn btn-in-container"
+            >View project</a
+          >
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-box pt-5">
+          <div class="work-inquiry text-center">
+            <div>
+              <h4>Work Inquiry</h4>
+              <p>Let's work together!</p>
             </div>
-            <div class="email-link text-center mt-2 mb-2">
-              <a href="mailto:stevens.nicky@gmail.com"
-                >stevens.nicky@gmail.com</a
+            <div>
+              <a
+                href="/contact.html"
+                class="btn btn-contact"
+                title="Contact Nicky"
+                >Contact me</a
               >
             </div>
-            <div class="social-links d-flex justify-content-center pb-5">
-              <a
-                href="https://www.linkedin.com/in/nicky-stevens-ba763a8"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/NicStevens" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
           </div>
-        </footer>
-      </div>
-    </main>
+          <div class="email-link text-center mt-2 mb-2">
+            <a href="mailto:stevens.nicky@gmail.com" title="Email Nicky"
+              >stevens.nicky@gmail.com</a
+            >
+          </div>
+          <div class="social-links d-flex justify-content-center pb-5">
+            <a
+              href="https://www.linkedin.com/in/nicky-stevens-ba763a8"
+              target="_blank"
+              title="LinkedIn Profile"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/NicStevens"
+              target="_blank"
+              title="GitHub Profile"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-coded-statement text-center pb-3">
+          <p>
+            This project was coded by Nicky Stevens and is
+            <a
+              href="https://github.com/NicStevens/shecodes-portfolio-project"
+              class="text-decoration-underline"
+              target="_blank"
+              >open-sourced</a
+            >.👈
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Check out Nicky Stevens's work. She is a front-end developer and information management professional based in Florida, USA. She has experience working with HTML, CSS, JavaScript, Python, APIs, and AI technology."
+    />
     <title>
-      Nicky Stevens - Front-end Developer and Information Management
+      Work of Nicky Stevens - Front-end Developer and Information Management
       Professional based in Florida, USA
     </title>
 
@@ -32,13 +36,13 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="body">
     <nav
       class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary fixed-top"
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Nicky Stevens</a>
+        <a class="navbar-brand" href="/" title="Homepage">Nicky Stevens</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,87 +56,141 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/about.html">About</a>
-            <a class="nav-link active" href="/work.html">Work</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" aria-current="page" href="/" title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link" href="/about.html" title="About Nicky Stevens"
+              >About</a
+            >
+            <a
+              class="nav-link active"
+              href="/work.html"
+              title="Nicky Stevens's Work"
+              >Work</a
+            >
+            <a
+              class="nav-link"
+              href="/contact.html"
+              title="Contact Nicky Stevens"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
     </nav>
+
     <div class="hero">
       <h1>My work</h1>
-      <h2>Check out some of my projects below!</h2>
+      <h2>Check out my projects below!</h2>
       <div>
-        <a href="/contact.html" class="btn btn-contact">Contact me</a>
+        <a href="/contact.html" class="btn btn-contact" title="Contact Nicky"
+          >Contact me</a
+        >
       </div>
     </div>
-    <main>
-      <div class="project-container text-center">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Fairy Tale Generator</h2>
-            <p>Created with HTML, CSS, JavaScript, and AI technology</p>
-            <img
-              src="/images/fairy-tale-generator-5.png"
-              class="img-fluid image-1"
-            />
-          </div>
-          <div class="col-md-6 responsive-margin">
-            <h2>World Clock</h2>
-            <p>Created with HTML, CSS, and JavaScript</p>
-            <img src="/images/world-clock.png" class="img-fluid image-2" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Weather App</h2>
-            <p>Created with HTML, CSS, and JavaScript</p>
-            <img src="/images/weather.png" class="img-fluid image-3" />
-          </div>
-          <div class="col-md-6 responsive-margin">
-            <h2>Fiction Writing Webpage</h2>
-            <p>Created with HTLM, CSS, and JavaScript</p>
-            <img src="/images/writing.png" class="img-fluid image-1" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Zombie Preparation Webpage</h2>
-            <p>Created with HTML, CSS, and JavaScript</p>
-            <img src="/images/zombies.png" class="img-fluid image-2" />
-          </div>
-        </div>
 
-        <footer>
-          <div class="footer-box pt-5">
-            <div class="contact-box text-center">
-              <div>
-                <h4>Work Inquiry</h4>
-                <p>Let's work together!</p>
-              </div>
-              <div>
-                <a href="/contact.html" class="btn btn-contact">Contact me</a>
-              </div>
+    <div class="project-container text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Fairy Tale Generator</h2>
+          <p>Created with HTML, CSS, JavaScript, an API, and AI technology</p>
+          <img
+            src="/images/fairy-tale-generator-5.png"
+            class="img-fluid image-1"
+            alt="Fairy Tale Generator preview"
+          />
+        </div>
+        <div class="col-md-6 responsive-margin">
+          <h2>World Clock</h2>
+          <p>Created with HTML, CSS, and JavaScript</p>
+          <img
+            src="/images/world-clock.png"
+            class="img-fluid image-2"
+            alt="World Clock app preview"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Weather App</h2>
+          <p>Created with HTML, CSS, and JavaScript</p>
+          <img
+            src="/images/weather.png"
+            class="img-fluid image-3"
+            alt="Weather app preview"
+          />
+        </div>
+        <div class="col-md-6 responsive-margin">
+          <h2>Fiction Writing Webpage</h2>
+          <p>Created with HTLM, CSS, and JavaScript</p>
+          <img
+            src="/images/writing.png"
+            class="img-fluid image-1"
+            alt="Fiction Writing webpage preview"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Zombie Preparation Webpage</h2>
+          <p>Created with HTML, CSS, and JavaScript</p>
+          <img
+            src="/images/zombies.png"
+            class="img-fluid image-2"
+            alt="Zombie Preparation webpage preview"
+          />
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-box pt-5">
+          <div class="work-inquiry text-center">
+            <div>
+              <h4>Work Inquiry</h4>
+              <p>Let's work together!</p>
             </div>
-            <div class="email-link text-center mt-2 mb-2">
-              <a href="mailto:stevens.nicky@gmail.com"
-                >stevens.nicky@gmail.com</a
+            <div>
+              <a
+                href="/contact.html"
+                class="btn btn-contact"
+                s
+                title="Contact Nicky"
+                >Contact me</a
               >
             </div>
-            <div class="social-links d-flex justify-content-center pb-5">
-              <a
-                href="https://www.linkedin.com/in/nicky-stevens-ba763a8"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/NicStevens" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
           </div>
-        </footer>
-      </div>
-    </main>
+          <div class="email-link text-center mt-2 mb-2">
+            <a href="mailto:stevens.nicky@gmail.com" title="Email Nicky"
+              >stevens.nicky@gmail.com</a
+            >
+          </div>
+          <div class="social-links d-flex justify-content-center pb-5">
+            <a
+              href="https://www.linkedin.com/in/nicky-stevens-ba763a8"
+              target="_blank"
+              title="LinkedIn Profile"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/NicStevens"
+              target="_blank"
+              title="GitHub Profile"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-coded-statement text-center pb-4">
+          <p>
+            This project was coded by Nicky Stevens and is
+            <a
+              href="https://github.com/NicStevens/shecodes-portfolio-project"
+              class="text-decoration-underline"
+              target="_blank"
+              >open-sourced</a
+            >.👈
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

@@ -13,8 +13,8 @@
   font-family: var(--secondary-font);
 }
 
-main {
-  background-color: var(--primary-color);
+.body {
+  background: var(--primary-color);
 }
 
 p {
@@ -39,6 +39,7 @@ p {
   font-size: 25px;
   font-family: var(--secondary-font);
 }
+
 .hero .btn-contact {
   background: var(--primary-color);
   padding: 10px 15px;
@@ -64,6 +65,7 @@ p {
   font-size: 40px;
   color: white;
 }
+
 .project-container .btn-in-container {
   background: var(--secondary-color);
   padding: 10px 15px;
@@ -86,12 +88,15 @@ img {
   border-radius: 5px;
   box-shadow: 2.3px 4.6px 4.6px rgba(0, 0, 0, 0.43);
 }
+
 .image-1 {
   border: 20px solid rgb(214, 172, 247);
 }
+
 .image-2 {
   border: 20px solid var(--secondary-color);
 }
+
 .image-3 {
   border: 20px solid rgb(172, 205, 247);
 }
@@ -108,11 +113,16 @@ img {
   font-weight: 800;
 }
 
+.about-me-space {
+  padding: 15px 30px 30px;
+}
+
 .information-container p {
   font-size: 18px;
   color: var(--primary-color);
   font-family: var(--secondary-font);
 }
+
 .information-container .btn-view-projects {
   background: var(--primary-color);
   padding: 10px 15px;
@@ -132,31 +142,40 @@ img {
 .information-container img {
   border: 2px solid var(--primary-color);
 }
+
 .information-container a {
   text-decoration: none;
   color: var(--primary-color);
 }
+
 .information-container a:hover {
   color: white;
 }
 
-footer {
-  border-top: solid 1px rgb(255, 255, 255, 0.5);
+.contact-page img {
+  max-width: 60%;
 }
+
+footer {
+  border-top: solid 1px rgb(255, 255, 255, 0.75);
+}
+
 footer h4 {
   font-size: 36px;
   font-family: var(--header-font);
   margin-bottom: 0;
 }
+
 footer p {
   margin-bottom: 0;
   font-family: var(--secondary-font);
 }
-footer .contact-box {
+
+footer .work-inquiry {
   color: white;
 }
 
-.contact-box .btn-contact {
+.work-inquiry .btn-contact {
   background: var(--secondary-color);
   padding: 10px 15px;
   font-size: 18px;
@@ -166,7 +185,7 @@ footer .contact-box {
   border: 2px solid white;
 }
 
-.contact-box .btn-contact:hover {
+.work-inquiry .btn-contact:hover {
   background: white;
   color: black;
   border: 2px solid black;
@@ -195,7 +214,7 @@ footer .contact-box {
   background: white;
 }
 
-footer .contact-box-secondary {
+footer .work-inquiry-secondary {
   color: black;
 }
 
@@ -239,18 +258,19 @@ footer .btn-contact-dark:hover {
   color: black;
 }
 
-.contact-page img {
-  max-width: 60%;
-}
 @media (max-width: 575px) {
   .hero {
     text-align: center;
-    padding: 100px 5px;
+    padding: 100px 5px 60px;
   }
   .hero h1 {
     font-size: 45px;
   }
+  .footer-coded-statement {
+    padding: 0 20px;
+  }
 }
+
 @media (max-width: 767px) {
   .project-container {
     text-align: center;

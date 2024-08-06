@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nicky Stevens is a front-end developer and information management professional based in Florida, USA. She has experience working with HTML, CSS, JavaScript, Python, APIs, and AI technology."
+    />
     <title>
-      Nicky Stevens - Front-end Developer and Information Management
+      About Nicky Stevens - Front-end Developer and Information Management
       Professional based in Florida, USA
     </title>
     <meta name="description" content="" />
@@ -32,13 +36,13 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="body">
     <nav
       class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary fixed-top"
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Nicky Stevens</a>
+        <a class="navbar-brand" href="/" title="Homepage">Nicky Stevens</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,40 +56,60 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
-            <a class="nav-link active" href="/about.html">About</a>
-            <a class="nav-link" href="/work.html">Work</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" aria-current="page" href="/" title="Homepage"
+              >Home</a
+            >
+            <a
+              class="nav-link active"
+              href="/about.html"
+              title="About Nicky Stevens"
+              >About</a
+            >
+            <a class="nav-link" href="/work.html" title="Nicky Stevens's Work"
+              >Work</a
+            >
+            <a
+              class="nav-link"
+              href="/contact.html"
+              title="Contact Nicky Stevens"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
     </nav>
+
     <div class="information-container">
-      <div class="row">
+      <div class="row about-me-space">
         <div class="col-xl-6">
           <h1>About me</h1>
           <p>
             My name is a Nicky Stevens. I am a soon-to-be graduate of SheCode's
-            coding bootcamp, a Front-end Developer, and an Information
-            Management Professional based in Florida, USA. With a Bachelor
-            degree in Film, a minor in history, and a Masters in Library and
+            coding bootcamp, a front-end developer, and an information
+            management professional based in Florida, USA. With a Bachelor
+            degree in film, a minor in history, and a Masters in Library and
             Information Science, making information available in creative,
             organized, and user-friendly ways is a passion of mine.
           </p>
 
           <p class="text-black">
-            I have experience using multiple markup and programming languages,
-            including HTML, CSS, JavaScript, and Python, manipulating data, and
-            using APIs and AI technology. In addition, I have been managing
-            information in the library and archives fields for 14 years. Through
-            the years I have honed my skills in information management,
-            databases, reference services, research, education, and customer
-            service making sure users, whether public citizens, corporate
-            customers, academic researchers, or professional colleauges, have
-            the information they need.
+            I have knowledge of multiple markup and programming languages,
+            including HTML, CSS, JavaScript, and Python, as well as experience
+            with Bootstrap, APIs, AI technology, development workflow, hosting,
+            and data manipulation. In addition, I have been managing information
+            in the library and archives fields for 14 years. Through the years I
+            have honed my skills in information management, databases, reference
+            services, research, education, and customer service making sure
+            users, whether public citizens, corporate customers, academic
+            researchers, or professional colleauges, have the information they
+            need.
           </p>
           <div>
-            <a href="/work.html" target="_blank" class="btn btn-view-projects"
+            <a
+              href="/work.html"
+              target="_blank"
+              class="btn btn-view-projects"
+              title="View Nicky's Work"
               >View work</a
             >
           </div>
@@ -94,33 +118,55 @@
           <img
             src="/images/library-shelf-read-1.png"
             class="img-fluid mt-5"
-            alt=""
+            alt="Vintage photograph of women in library"
           />
         </div>
       </div>
 
       <footer>
-        <div class="contact-box-secondary text-center pt-5">
+        <div class="work-inquiry-secondary text-center pt-5">
           <div>
             <h4>Work Inquiry</h4>
             <p>Let's work together!</p>
           </div>
           <div>
-            <a href="/contact.html" class="btn btn-contact-dark">Contact me</a>
+            <a
+              href="/contact.html"
+              class="btn btn-contact-dark"
+              title="Contact Nicky"
+              >Contact me</a
+            >
           </div>
         </div>
         <div class="email-link-secondary text-center mt-2 mb-2">
-          <a href="mailto:stevens.nicky@gmail.com">stevens.nicky@gmail.com</a>
+          <a href="mailto:stevens.nicky@gmail.com" title="Email Nicky"
+            >stevens.nicky@gmail.com</a
+          >
         </div>
         <div class="social-links-secondary d-flex justify-content-center pb-5">
           <a
             href="https://www.linkedin.com/in/nicky-stevens-ba763a8"
             target="_blank"
+            title="LinkedIn Profile"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://github.com/NicStevens" target="_blank"
+          <a
+            href="https://github.com/NicStevens"
+            target="_blank"
+            title="GitHub Profile"
             ><i class="fa-brands fa-github"></i
           ></a>
+        </div>
+        <div class="footer-coded-statement text-center pb-4">
+          <p>
+            This project was coded by Nicky Stevens and is
+            <a
+              href="https://github.com/NicStevens/shecodes-portfolio-project"
+              class="text-decoration-underline"
+              target="_blank"
+              >open-sourced</a
+            >.👈
+          </p>
         </div>
       </footer>
     </div>
